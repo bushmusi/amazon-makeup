@@ -1,7 +1,21 @@
 import { MdKeyboardBackspace } from 'react-icons/md';
-import { useNavigate  } from 'react-router-dom';
-export default function Detail() {
+import { useNavigate,withRouter  } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchByProductType } from '../redux/detail/item-detail';
+const props = withRouter (props);
+export default function Detail(props) {
   const navigate = useNavigate();
+  const { id } = props.match.params;
+  console.log(id);
+  const dispatch = useDispatch()
+  const initState = useSelector(state => state.productReducer)
+  const {products, loading, error} = initState;
+  // useEffect(()=>{
+  //   if(products.length ===0 ){
+  //     dispatch(fetchByProductType())
+  //   }
+  // },[])
     return (
       <>
       <div className="flex p-5 items-center">
