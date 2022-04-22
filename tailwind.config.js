@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'makeup-img': "url('/src/assets/makeup.png')"
+      },
       fontFamily: {
         sans: ['"Gill Sans"', 'sans-serif'],
       },
