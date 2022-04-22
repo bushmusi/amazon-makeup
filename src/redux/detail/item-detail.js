@@ -55,11 +55,11 @@ export default function reducer(state= initState,action) {
     }
 }
 
-export function fetchByProductType(type) {
+export function fetchByProductType(search) {
     const url = "http://makeup-api.herokuapp.com/api/v1/products.json";
     return (dispatch) => {
         dispatch(fetchRequest())
-        axios.get(`${url}?product_type=${type}`).then(
+        axios.get(`${url}/${search}`).then(
             res => dispatch(fetchSuccess(res.data))
         ).catch(
             err => dispatch(fetchFailure(err))
