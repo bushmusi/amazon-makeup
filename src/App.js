@@ -3,7 +3,6 @@ import Home from './component/home';
 import Setting from './component/setting';
 import Detail from './component/detail';
 import Header from './component/header';
-// import './App.css';
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
-          <Route path="home/detail" element={<Detail />} />
+          <Route path="detail" element={<Detail />} />
           <Route path="setting" element={<Setting />} />
         </Routes>
 
