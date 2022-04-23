@@ -18,7 +18,7 @@ export default function Detail() {
 
   useEffect(() => {
     dispatch(fetchByProductType(search));
-  }, [dispatch]);
+  }, []);
   return (
     <>
       <div className="flex p-5 items-center">
@@ -29,7 +29,7 @@ export default function Detail() {
       </div>
       <div className="flex flex-col justify-center items-center">
         <RingLoader loading={loading} color="white" size={150} />
-        {loading && <h1 className="text-white text-center">Getting products...</h1>}
+        {loading && <h1 className="text-white text-center">Getting Specfic products...</h1>}
       </div>
       {
         error && <span>{error}</span>
