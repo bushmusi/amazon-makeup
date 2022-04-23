@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bushmusi/amazon-makeup/static/css/main.1c70713f.css",
+    "main.js": "/bushmusi/amazon-makeup/static/js/main.b6d925bb.js",
+    "static/js/787.4520b294.chunk.js": "/bushmusi/amazon-makeup/static/js/787.4520b294.chunk.js",
+    "static/media/makeup.png": "/bushmusi/amazon-makeup/static/media/makeup.45695c3b14069f76be71.png",
+    "static/media/eyeshadow.svg": "/bushmusi/amazon-makeup/static/media/eyeshadow.431293649ee3a6268046.svg",
+    "static/media/lipstick.svg": "/bushmusi/amazon-makeup/static/media/lipstick.93a613ee12feb986d418.svg",
+    "static/media/blush.svg": "/bushmusi/amazon-makeup/static/media/blush.2700658dd20921ddc2d6.svg",
+    "static/media/bronzer.svg": "/bushmusi/amazon-makeup/static/media/bronzer.befb5e78d0eab7978060.svg",
+    "static/media/mascara.svg": "/bushmusi/amazon-makeup/static/media/mascara.64a7a1cd7d1594d9b219.svg",
+    "static/media/eyeliner.svg": "/bushmusi/amazon-makeup/static/media/eyeliner.b5b1dd99b0135208e10b.svg",
+    "static/media/eyebrow.svg": "/bushmusi/amazon-makeup/static/media/eyebrow.5731fc30b2ce0fe09e85.svg",
+    "static/media/foundation.svg": "/bushmusi/amazon-makeup/static/media/foundation.7d37536c09b6bfead7a6.svg",
+    "index.html": "/bushmusi/amazon-makeup/index.html",
+    "static/media/lip_liner.svg": "/bushmusi/amazon-makeup/static/media/lip_liner.f7272ad41b2b514457ce.svg",
+    "static/media/nail_polish.svg": "/bushmusi/amazon-makeup/static/media/nail_polish.61563f22ce98be7785df.svg",
+    "main.1c70713f.css.map": "/bushmusi/amazon-makeup/static/css/main.1c70713f.css.map",
+    "main.b6d925bb.js.map": "/bushmusi/amazon-makeup/static/js/main.b6d925bb.js.map",
+    "787.4520b294.chunk.js.map": "/bushmusi/amazon-makeup/static/js/787.4520b294.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c70713f.css",
+    "static/js/main.b6d925bb.js"
+  ]
+}
