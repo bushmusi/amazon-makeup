@@ -3,6 +3,7 @@ import axios from "axios";
 const CATEGORY_REQUEST = "CATEGORY_REQUEST";
 const CATEGORY_SUCCESS = "CATEGORY_SUCCESS";
 const CATEGORY_FAILURE= "CATEGORY_FAILURE";
+const CATEGORY_FILTER = "CATEGORY_FILTER";
 
 const initState = {
     category: {blush: 0, bronzer: 0, eyebrow: 0, eyeliner: 0, foundation: 0, lip_liner: 0, lipstick: 0, nail_polish: 0},
@@ -38,6 +39,13 @@ function catFailure(err) {
     }
 }
 
+export function catFilter(data) {
+    return {
+        type: CATEGORY_FILTER,
+        payload: data
+    }
+}
+
 export default function reducer(state=initState,action) {
     switch(action.type) {
         case CATEGORY_REQUEST:
@@ -56,6 +64,12 @@ export default function reducer(state=initState,action) {
                 ...state,
                 loading: false,
                 error: action.payload
+            }
+        case CATEGORY_FILTER:
+            return {
+                ...state,
+                loading: false,
+                category: action.payload
             }
         default:
             return {
