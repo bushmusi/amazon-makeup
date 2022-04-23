@@ -59,7 +59,7 @@ export function fetchByProductType(search) {
   const url = 'https://makeup-api.herokuapp.com/api/v1/products.json';
   return (dispatch) => {
     dispatch(fetchRequest());
-    axios.get(`${url}/${search}&&brand=covergirl`).then(
+    axios.get(`${url}/${search}`).then(
       (res) => dispatch(fetchSuccess(res.data)),
     ).catch(
       (err) => dispatch(fetchFailure(err)),

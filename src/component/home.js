@@ -58,7 +58,7 @@ export default function Home() {
         <RingLoader loading={loading} color="white" size={150} />
         { loading && <h1 className="text-white text-center">Computing categories items...</h1>}
       </div>
-      <ul className="grid gap-x-0 gap-y-0 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+      <ul className="grid gap-x-0 gap-y-0 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mb-20">
         {
                     !loading && error && (
                     <h1 className="color-red">
