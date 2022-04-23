@@ -27,10 +27,12 @@ export default function Detail() {
         </span>
         <h1 className="text-white">Category Lists</h1>
       </div>
-      {loading && <div className="flex flex-col justify-center items-center">
+      {loading && (
+      <div className="flex flex-col justify-center items-center">
         <RingLoader loading={loading} color="white" size={150} />
         <h1 className="text-white text-center">Getting Specfic products...</h1>
-      </div>}
+      </div>
+      )}
       {
         error && <span>{error}</span>
       }
