@@ -10,9 +10,23 @@
       content="This website is build for showing list of make items to customer by using amazone API"
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
     <title>AZ Makeups</title>
   </head>
-  <body>
+  <body class="bg-sky-400">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

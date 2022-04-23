@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Amazone Makeup Stock 
+Amazon Makeup project is used for showing list of makeup products to user and also users can filter by brand and price amount. For building this API we have used third party api.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![screenshot](./app_screenshot.png)
 
-## Available Scripts
+## Project Description
+- > [Loom Link](https://www.loom.com/share/f0afd9ca90424c99a64d27a71415b165)
+## Live Demo 
+- > [Heroku Cloud Link](https://az-makeup.herokuapp.com/)
+## Built With
 
-In the project directory, you can run:
+- React.Js 18.00
+- Redux
+- Redux thunk
+- Tailwindcss
+- CSS3
+- Linters
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-### `npm start`
+1. `git clone https://github.com/bushmusi/amazone-makeup`
+2. `cd amazone-makeup`
+3. `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run tests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For tracking linters errors locally, you need to follow these steps:
 
-### `npm test`
+- For tracking linter errors in CSS file run:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
+2. `npx stylelint "**/*.{css,scss}"`
 
-### `npm run build`
+- For tracking linter errors in Javascript file run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+2. `npx eslint .`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Delployed on [Heroku](https://heroku.com/)
 
-### `npm run eject`
+## Author
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+👤 **Bushra**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- GitHub: 
+    - [Bushra](https://www.github.com/bushmusi)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🤝 Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions, issues, and feature requests are welcome!
 
-## Learn More
+Feel free to check the [issues page](../../issues/).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Show your support
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Give a ⭐️ if you like this project!
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Microverse 
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- Coding Partners
+- Code Reviewers
 
-### Analyzing the Bundle Size
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
