@@ -18,7 +18,7 @@ export default function Detail() {
 
   useEffect(() => {
     dispatch(fetchByProductType(search));
-  }, [search]);
+  }, [dispatch]);
   return (
     <>
       <div className="flex p-5 items-center">
@@ -39,7 +39,7 @@ export default function Detail() {
           products.map((item) => (
             <li className="p-3 flex odd:bg-sky-500 even:bg-sky-700" key={item.id}>
               <div className="flex justify-start">
-                <img className="w-3/4" src={`${item.image_link}`} alt={`brand ${item.brand} named ${item.name}`} />
+                <img className="w-3/4 max:w-30" src={`${item.image_link}`} alt={`brand ${item.brand} named ${item.name}`} />
               </div>
               <div>
                 <ul className="p-5">
