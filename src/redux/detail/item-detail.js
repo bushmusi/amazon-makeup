@@ -56,7 +56,7 @@ export default function reducer(state = initState, action) {
 }
 
 export function fetchByProductType(search) {
-  const url = 'http://makeup-api.herokuapp.com/api/v1/products.json';
+  const url = 'https://makeup-api.herokuapp.com/api/v1/products.json';
   return (dispatch) => {
     dispatch(fetchRequest());
     axios.get(`${url}/${search}&&brand=covergirl`).then(

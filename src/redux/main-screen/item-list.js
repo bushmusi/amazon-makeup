@@ -96,7 +96,7 @@ export default function reducer(state = initState, action) {
 }
 
 export function getCategoryData() {
-  const url = 'http://makeup-api.herokuapp.com/api/v1/products.json';
+  const url = 'https://makeup-api.herokuapp.com/api/v1/products.json';
   return (dispatch) => {
     dispatch(catRequest());
     axios.get(url).then(
