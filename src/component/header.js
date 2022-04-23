@@ -6,7 +6,7 @@ export default function Home() {
     <header className="App-header">
       <nav className="flex p-5 shadow-md">
         <NavLink to="/" className="basis-1/3  text-white "><MdHome size={28} /></NavLink>
-        <h3 className="basis-1/3 text-white flex justify-center font-bold">Amazone Makeup</h3>
+        <h3 className="basis-1/3 text-white flex justify-center font-bold sm:font-">Amazone Makeup</h3>
         <NavLink to="setting" className="basis-1/3  text-white ">
           <div className="flex justify-end">
             <MdOutlineSettings size={28} />
