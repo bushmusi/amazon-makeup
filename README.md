@@ -3,7 +3,7 @@ Amazon Makeup project is used for showing list of makeup products to user and al
 
 ![screenshot](./app_screenshot.png)
 ## Live Demo 
-- > [Heroku Cloud Link](https://bushmusi-bookstore.herokuapp.com/)
+- > [Heroku Cloud Link](https://az-makeup.herokuapp.com/)
 ## Built With
 
 - React.Js 18.00
