@@ -1,5 +1,5 @@
 import { MdKeyboardBackspace } from 'react-icons/md';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import RingLoader from 'react-spinners/ClipLoader';
@@ -11,7 +11,7 @@ function limitWords(string) {
 }
 export default function Detail() {
   const navigate = useNavigate();
-  const { search } = useLocation();
+  const { id: search } = useParams();
   const dispatch = useDispatch();
   const initState = useSelector((state) => state.productReducer);
   const { products = [], loading, error } = initState.state;
@@ -41,7 +41,7 @@ export default function Detail() {
           products.map((item) => (
             <li className="p-3 flex odd:bg-sky-500 even:bg-sky-700" key={item.id}>
               <div className="flex justify-start">
-                <img className="w-3/4 max:w-30" src={`${item.image_link}`} alt={`brand ${item.brand} named ${item.name}`} />
+                <img style={{ maxWidth: '242px' }} className="w-3/4 max:w-30" src={`${item.image_link}`} alt={`brand ${item.brand} named ${item.name}`} />
               </div>
               <div>
                 <ul className="p-5">
