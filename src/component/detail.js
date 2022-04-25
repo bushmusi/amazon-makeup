@@ -14,7 +14,7 @@ export default function Detail() {
   const { id: search } = useParams();
   const dispatch = useDispatch();
   const initState = useSelector((state) => state.productReducer);
-  const { products = [], loading, error } = initState.state;
+  const { products = [], loading, error } = initState;
 
   useEffect(() => {
     dispatch(fetchByProductType(search));

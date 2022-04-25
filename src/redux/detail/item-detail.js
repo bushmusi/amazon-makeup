@@ -34,23 +34,24 @@ export default function reducer(state = initState, action) {
   switch (action.type) {
     case FETCH_REQUEST:
       return {
-        state,
+        ...state,
         loading: true,
       };
     case FETCH_SUCCESS:
       return {
-        state,
+        ...state,
         products: action.payload,
         loading: false,
       };
     case FETCH_FAILURE:
       return {
-        state,
+        ...state,
+        loading: false,
         error: action.payload,
       };
     default:
       return {
-        state,
+        ...state,
       };
   }
 }
