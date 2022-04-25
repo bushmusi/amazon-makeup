@@ -1,5 +1,5 @@
 import { MdKeyboardBackspace } from 'react-icons/md';
-import { useNavigate, useLocation, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import RingLoader from 'react-spinners/ClipLoader';
