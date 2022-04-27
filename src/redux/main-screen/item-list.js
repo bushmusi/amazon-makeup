@@ -56,13 +56,6 @@ function catFailure(err) {
   };
 }
 
-export function catFilter(data) {
-  return {
-    type: CATEGORY_FILTER,
-    payload: data,
-  };
-}
-
 export default function reducer(state = initState, action) {
   switch (action.type) {
     case CATEGORY_REQUEST:

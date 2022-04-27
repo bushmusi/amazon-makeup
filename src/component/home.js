@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import RingLoader from 'react-spinners/ClipLoader';
-import { getCategoryData, catFilter } from '../redux/main-screen/item-list';
+import { getCategoryData } from '../redux/main-screen/item-list';
 import Background from '../assets/makeup.png';
 
 function formatString(str) {
@@ -17,15 +17,13 @@ export default function Home() {
   const { category = {}, loading, error } = initState;
   const dispatch = useDispatch();
   const [searchKeyWord, setSearchKeyWord] = useState('');
-  const [oldList, setOldList] = useState(category);
 
   function filterByCategory(e) {
     setSearchKeyWord(e.target.value);
   }
 
   useEffect(() => {
-    if(category)
-      dispatch(getCategoryData());
+    if (category) dispatch(getCategoryData());
   }, []);
 
   return (
