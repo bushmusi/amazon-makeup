@@ -7,14 +7,14 @@ const CATEGORY_FILTER = 'CATEGORY_FILTER';
 
 const initState = {
   category: {
-    blush: 78,
-    bronzer: 69,
-    eyebrow: 49,
-    eyeliner: 148,
-    foundation: 166,
-    lip_liner: 29,
-    lipstick: 154,
-    nail_polish: 60,
+    blush: 0,
+    bronzer: 0,
+    eyebrow: 0,
+    eyeliner: 0,
+    foundation: 0,
+    lip_liner: 0,
+    lipstick: 0,
+    nail_polish: 0,
   },
   loading: false,
   error: '',

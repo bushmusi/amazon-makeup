@@ -24,15 +24,9 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const filteredObj = Object.keys(oldList).length
-      ? Object.keys(oldList).filter((key) => key.includes(searchKeyWord)).reduce((obj, key) => Object.assign(obj, { [key]: oldList[key] }), {}) : {}; //eslint-disable-line
-    dispatch(catFilter(filteredObj));
-  }, [searchKeyWord]);
-
-  useEffect(() => {
-    dispatch(getCategoryData());
-    setOldList(category);
-  }, [dispatch]);
+    if(category)
+      dispatch(getCategoryData());
+  }, []);
 
   return (
     <div className="">
@@ -69,19 +63,21 @@ export default function Home() {
                 }
         {
                     !loading && Object.entries(category).map(([key, value]) => (
-                      <li key={`${key}${value}`} className="shadow-md sm:h-1/8 dark:bg-gray-800 dark:border-gray-700 p-5 cursor-pointer odd:bg-sky-500 even:bg-sky-700">
-                        <NavLink to={`detail/${key}`} className="">
-                          <div href="#" className="flex">
-                            <img className="p-8 rounded-t-lg fill-white w-64 flex-1" src={require(`../assets/${key}.svg`)} alt={`catagory ${key}`} />  { /*eslint-disable-line */ }
-                            <p className="text-white"><MdArrowForward /></p>
-                          </div>
-                          <div className="flex flex-col items-end  md:gap-5">
-                            <h3 className="font-medium leading-8 text-white">{formatString(key)}</h3>
-                            <p className="font-medium leading-8 text-white">{value}</p>
-                          </div>
-                        </NavLink>
-                        <Outlet />
-                      </li>
+                      key.includes(searchKeyWord) && (
+                        <li key={`${key}${value}`} className="shadow-md sm:h-1/8 dark:bg-gray-800 dark:border-gray-700 p-5 cursor-pointer odd:bg-sky-500 even:bg-sky-700">
+                          <NavLink to={`detail/${key}`} className="">
+                            <div href="#" className="flex">
+                              <img className="p-8 rounded-t-lg fill-white w-64 flex-1" src={require(`../assets/${key}.svg`)} alt={`catagory ${key}`} />  { /*eslint-disable-line */ }
+                              <p className="text-white"><MdArrowForward /></p>
+                            </div>
+                            <div className="flex flex-col items-end  md:gap-5">
+                              <h3 className="font-medium leading-8 text-white">{formatString(key)}</h3>
+                              <p className="font-medium leading-8 text-white">{value}</p>
+                            </div>
+                          </NavLink>
+                          <Outlet />
+                        </li>
+                      )
                     ))
                 }
       </ul>

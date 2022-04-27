@@ -1,5 +1,10 @@
 export default function Setting() {
+
   return (
-    <h3>Hello Setting</h3>
+    <>
+      <h1 className='p-5'>
+        On development this page!!!
+      </h1>
+    </>
   );
 }
