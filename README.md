@@ -1,7 +1,7 @@
 # Amazone Makeup Stock 
 Amazon Makeup project is used for showing list of makeup products to user and also users can filter by brand and price amount. For building this API we have used third party api.
 
-![screenshot](./makeup.gif)
+![App Short video](./makeup.gif)
 
 ## Project Description
 - > [Loom Link](https://www.loom.com/share/f0afd9ca90424c99a64d27a71415b165)
